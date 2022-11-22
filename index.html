@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/990ca34041.js" crossorigin="anonymous"></script>
+
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/highcharts-more.js"></script>
+  <script src="https://code.highcharts.com/modules/solid-gauge.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/modules/export-data.js"></script>
+  <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+  <title>Dashboard</title>
+</head>
+<body>
+
+  <div class="container">
+
+    <nav>
+      <ul>
+        <li><a href="#" class="logo">
+          <img src="/logo.png" alt="" width="100px" height="100px">
+          <span class="nav-item">DashBoard</span>
+        </a></li>
+
+        <li><a href="">
+          <i class="fa-solid fa-house-user"></i>
+          <span class="nav-item">Home</span>
+        </a></li>
+
+        <li><a href="">
+          <i class="fa-solid fa-user"></i>
+          <span class="nav-item">Perfil</span>
+        </a></li>
+        <li><a href="">
+          <i class="fa-solid fa-chart-line"></i>
+          <span class="nav-item">Charts</span>
+        </a></li>
+
+        <li><a href="">
+          <i class="fa-solid fa-address-book"></i>
+          <span class="nav-item">Contacto</span>
+        </a></li>
+
+        <li><a href="" class="logout">
+          <i class="fa-solid fa-right-from-bracket"></i>
+          <span class="nav-item">Logout</span>
+        </a></li>
+
+      </ul>
+      
+
+    </nav>
+    <section class="main">
+
+      <div class="main-top">
+        <i class="fa-solid fa-bolt"></i>
+        <h1>Energy Monitor</h1>
+        
+      </div>
+      <div class="main-skills">
+        <div class="card">
+          <i class="fa-solid fa-lightbulb"></i>
+          
+          <div class=""><h4><i class=""></i>LED</h4><label class="switch"><input type="checkbox" onchange="toggleLed(this);" id="led"><span class="slider"></span></label></div>  
+          
+        </div>
+
+        <div class="card">
+        
+          <h3><i class="fa-solid fa-bolt" style="color:#79f379;"></i> Voltaje</h3>
+        <!--<p><span class="reading"><span id="gauge"></span> hPa</span></p> -->
+        <div id="container3" class="new"></div>
+          
+        </div>
+
+        <div class="card">
+          <i class="fa-solid fa-bolt-lightning"></i>
+          <h3>Corriente</h3>
+          
+          
+        </div>
+
+      </div>
+
+      <section class="charts">
+        <h1>Graficos</h1>
+        <div class="chart-box">
+          <ul>
+            <li>Consumo Mensual</li>
+          </ul>
+          <div class="course">
+            <div class="box">
+              
+              <i class="fa-solid fa-chart-simple"></i>
+            </div>
+          </div>
+        </div>
+
+
+      </section>
+
+    </section>
+  </div>
+  <script src="index.js"></script>
+  <script src="charts.js"></script>
+</body>
+</html>
